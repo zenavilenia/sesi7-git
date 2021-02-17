@@ -10,8 +10,26 @@
     <div>Click count:</div>
     <div id="clickcount">1</div>
 
-    <button onclick="addClickCount()">Add click count</button>
+    <button id="btnAddClickCount"
+        onclick="addClickCount()"
+        onmouseover="changeBackgroundColor('red')"
+        onmouseleave="changeBackgroundColor('white')"
+    >
+         Add click count
+    </button>
     <button onclick="minClickCount()">Min click count</button>
+
+
+    <div>===============================================</div>
+
+    <div>Data Diri:</div>
+
+    <form id="dataDiri">
+        Name: <input type="text" id="custName">
+    </form>
+
+    <button onclick="hideForm()">Hide Form</button>
+    <button onclick="showForm()">Show Form</button>
 
     <script src="js/script.js"></script>
 </body>
